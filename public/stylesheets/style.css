@@ -1,0 +1,362 @@
+
+
+body {
+  padding: 50px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: lightblue;
+}
+
+a {
+  color: #00B7FF;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+/*DESTACADOS*/
+
+p{
+  font-size: 11px;
+  padding: 10px 5px 11px 5px;
+}
+
+
+.container {
+  /*position: relative;*/
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 0px 25px 75px;
+  margin: -150px 0px 300px -70px
+ 
+}
+
+.container .card{
+  position: relative;
+  max-width: 223px;
+  height: 215px;
+  background-color: rgba(168, 14, 14, 0.658);
+  margin: 208px 10px 30px 10px;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0,0,0,0,5);
+  transition: 0.3s ease-in-out;
+}
+
+.container .card:hover{
+  height: 600px;
+}
+
+.container .card .gib {
+  position: relative;
+  width: 200px;
+  height: 1000px;
+  top: -60px;
+  left: 13px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0,0,0,0,2);
+}
+
+.container .card .gib img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.container .card .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15 px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+ /*CONTACTO*/
+ 
+.form-contact{
+  width: 400px;
+  background-color: rgba(168, 14, 14, 0.658);
+  padding: 30px;
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  box-shadow: 7px 13px 37px  #000;  
+}
+
+.form-contact h4{
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 95%;
+  background: rgb(104, 9, 9);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid red;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+  .form-contact p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  .form-contact a {
+    color: white;
+    text-decoration: none;
+  }
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+
+  .form-contact .botons {
+    width: 100%;
+    background: rgb(205, 15, 15);
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius:6px;
+  }
+  
+
+  /*REGISTRO*/
+
+  .form-register{
+    width: 400px;
+    background-color: rgba(168, 14, 14, 0.658);
+    padding: 14px;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px  #000;
+  }
+  
+  .form-register h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    width: 95%;
+    background: rgb(104, 9, 9);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid red;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: white;
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: rgb(205, 15, 15);
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 55px 0;
+    font-size: 16px;
+    border-radius:6px;
+  }
+
+  /*GALERIA*/
+
+  h2{
+
+    font-weight: lighter;
+    font-size:23px;
+    color:white;
+    text-align: center;
+    padding: 10px;
+    }
+  
+  h3{
+    font-weight: lighter;
+    font-size:18px;
+    color:white;
+    text-align: center;
+    padding: 10px;
+    }
+  
+  
+  span{
+      font-size:40px;
+      color:red;
+      text-align: center;
+      padding: 10px;
+    }
+  
+  
+  img {
+    box-sizing: border-box;  
+    border-radius: 30px;
+    width: 5px;
+    }
+  
+  /*Video link YouTube*/
+  .contenedor-detalle .caja-video {
+    overflow: hidden;
+    padding-bottom: 400px;
+    position: relative;
+    height: 0;
+    max-width: 960px;
+    }
+  
+  .video-responsive {
+      height: 0;
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      position: relative;
+      }
+  .video-responsive iframe, .video-responsive object, .video-responsive embed {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      }
+  
+  .contenedor-detalle .caja-video * {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    }
+
+    /*EFECTOS GALERIA Y HOVER*/
+    /*EL EFECTO HOVER EN FOTOS*/
+.guitarras .guitarras-list {
+  padding: 0px;
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top:0;
+}
+
+.guitarras .guitarras-list li {
+  position: relative;
+  width: 270px;
+  height: 475px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.guitarras .guitarras-list li img {
+  /*height: inherit;*/
+  width: 100%;
+  padding: 10px;  
+}
+
+.guitarras .guitarras-list li .guitarras-description {
+  position: absolute;
+  background-color: #1d1d1dad;
+  color: white;
+  height: 80%;
+  right: 0px;
+  bottom: 0px;
+  width: inherit;
+  transform: translate(0%, 100%);
+  transition: transform;
+  transition-duration: .75s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.guitarras .guitarras-list li:hover .guitarras-description {
+  transform: translate(0%, 0%);
+}
+
+.guitarras .guitarras-list li .guitarras-description .guitarras-description-items {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+.guitarras .guitarras-list li .guitarras-description .guitarras-descrition-items h2 {
+  text-align: center;
+  font-size: medium;
+}
+
+.guitarras .guitarras-list li .guitarras-description .deatil-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.guitarras .guitarras-list li .guitarras-description .deatil-buttons i {
+  margin: 5px;
+}
+
+.guitarras .guitarras-list li .guitarras-description .deatil-buttons a {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  background-color: rgba(168, 14, 14, 0.658);
+  border-radius: 6px;
+  height: 50px;
+  border: 0px;
+  text-align: center;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}

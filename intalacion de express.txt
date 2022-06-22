@@ -1,0 +1,28 @@
+npx express-generator --view=hbs
+npm i
+npm i nodemon
+
+ctrl C - cerramos el servidor
+
+layout -- creo en el body los links a las secciones
+
+app.js -- creamos las variables de las secciones
+        var galeriaRouter = require("./routes/galeria"); // esto va a ir al archivo galeria.js
+        var destacadosRouter = require("./routes/destacados");
+        var contactoRouter = require("./routes/contacto");
+        var registroRouter = require("./routes/registro");
+
+app.js -- creamos las app.use de las secciones
+        app.use("/galeria",galeriaRouter); // aca llama a var galeriaRouter
+        app.use("/destacados",destacadosRouter);
+        app.use("/contacto",contactoRouter);
+        app.use("/registro",registroRouter);
+
+routes -- creamos los archivos js de las secciones
+        galeria.js
+        destacados.js
+        contacto.js
+        registro.js
+
+
+en cada archivo js, importante cambiar el nombre de cada seccion -- res.render('index', { title: 'Guitar Shop Express' });
